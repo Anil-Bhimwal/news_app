@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My News App</title>
+        
+    </head>
+    <body>
+        <div>
+             <% data["articles"].forEach(function(variable){%>
+            
+                <li>
+                    <h3> <%=variable["title"]%></h3> 
+                    <img src=<%=variable["urlToImage"]%> >
+                     <a href=<%= variable["url"]%> ><%=variable["url"]%></a>
+                     
+                     
+                </li>
+                
+            <% })%>
+    <a href="/">Search Again</a>
+    </body>
+</html>
